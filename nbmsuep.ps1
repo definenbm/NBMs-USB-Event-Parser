@@ -32,5 +32,6 @@ $drives = Get-WinEvent -LogName System |
 if ($drives) {
     $drives
 } else {
-    Write-Output "no drives detected" -ForegroundColor Red
-}
+    Write-Output "no drives detected"
+} -ForegroundColor Red
+
